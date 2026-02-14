@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* Hero Layout */
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:80%;
+    color:white;
+}
+
+/* Left Text */
+.hero-text{
+    max-width:500px;
+    animation: slideIn 1s ease forwards;
+}
+
+.hero-text h1{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.hero-text p{
+    margin-bottom:20px;
+    line-height:1.5;
+}
+
+/* Button Pulse */
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:25px;
+    background:#fff;
+    color:#764ba2;
+    font-size:16px;
+    cursor:pointer;
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+    0%{ transform:scale(1); }
+    50%{ transform:scale(1.1); }
+    100%{ transform:scale(1); }
+}
+
+/* Right Image */
+.hero-img img{
+    width:350px;
+    animation: slideInRight 1s ease forwards;
+}
+
+/* Animations */
+@keyframes slideIn{
+    from{
+        opacity:0;
+        transform:translateX(-50px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes slideInRight{
+    from{
+        opacity:0;
+        transform:translateX(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}

@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+/* Section layout */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+
+    /* Moving gradient */
+    background:linear-gradient(-45deg,#ff6b6b,#6c63ff,#4ecdc4,#45b7d1);
+    background-size:400% 400%;
+    animation:gradientMove 10s ease infinite;
+}
+
+/* Content fade */
+.content{
+    animation:fadeIn 2s ease forwards;
+}
+
+h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+p{
+    font-size:18px;
+    opacity:0.9;
+}
+
+@keyframes gradientMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}

@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#0f172a;
+}
+
+/* SECTION */
+.creative{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+    color:white;
+}
+
+/* GRID LAYOUT */
+.grid{
+    width:85%;
+    max-width:1000px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+    z-index:2;
+}
+
+/* TEXT */
+.text{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    animation:slideIn 1.2s ease forwards;
+}
+
+.text h1{
+    font-size:42px;
+}
+
+.text p{
+    opacity:.85;
+    line-height:1.5;
+}
+
+/* BUTTON pulse */
+button{
+    padding:12px 22px;
+    border:none;
+    background:#38bdf8;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+    width:140px;
+    animation:pulse 2s infinite;
+}
+
+/* IMAGE */
+.image{
+    position:relative;
+}
+
+.image img{
+    width:100%;
+    border-radius:12px;
+    transition:.4s;
+}
+
+/* Hover animation */
+.image img:hover{
+    transform:scale(1.08) rotate(1deg);
+}
+
+/* FLOATING SHAPES (overlapping design) */
+.shape{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(40px);
+    opacity:.5;
+}
+
+.s1{
+    width:200px;
+    height:200px;
+    background:#22c55e;
+    top:10%;
+    left:5%;
+    animation:float 6s infinite ease-in-out;
+}
+
+.s2{
+    width:250px;
+    height:250px;
+    background:#a855f7;
+    bottom:10%;
+    right:5%;
+    animation:float 7s infinite ease-in-out;
+}
+
+/* ANIMATIONS */
+
+/* 1 Slide-in */
+@keyframes slideIn{
+    from{
+        opacity:0;
+        transform:translateX(-40px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+/* 2 Floating */
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-30px);}
+    100%{transform:translateY(0);}
+}
+
+/* 3 Pulse */
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.08);}
+    100%{transform:scale(1);}
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .grid{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    button{
+        margin:auto;
+    }
+}

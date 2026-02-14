@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: Arial;
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 25px;
+    width: 260px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+    /* Fade in */
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+
+    /* Hover animation */
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Profile image */
+.profile-img {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Social icons flex */
+.socials {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socials i {
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.socials i:hover {
+    color: #764ba2;
+    transform: scale(1.2);
+}
+
+/* Fade keyframes */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

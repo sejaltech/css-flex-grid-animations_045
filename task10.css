@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(-45deg,#89f7fe,#66a6ff,#fbc2eb,#a6c1ee);
+    background-size:400% 400%;
+    animation:bgMove 12s ease infinite;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+
+.testimonials{
+    display:flex;
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    width:220px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+
+    animation:float 4s ease-in-out infinite;
+}
+
+.card:nth-child(2){
+    animation-delay:0.5s;
+}
+
+.card:nth-child(3){
+    animation-delay:1s;
+}
+
+.card h4{
+    margin-top:12px;
+    color:#555;
+}
+
+@keyframes float{
+    0%{ transform:translateY(0); }
+    50%{ transform:translateY(-15px); }
+    100%{ transform:translateY(0); }
+}

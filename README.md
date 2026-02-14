@@ -133,10 +133,13 @@ https://github.com/user-attachments/assets/7744c9dc-f044-46bf-be90-734682c470a0
 <img width="1470" height="828" alt="Screenshot 2026-02-14 at 9 44 18 AM" src="https://github.com/user-attachments/assets/1009a83f-032e-4cab-9ca6-ea30b1997b54" />
 
 **Task 19**
-https://github.com/user-attachments/assets/651fa90b-219f-4bc3-97da-9483ab8f592a
+<img width="1439" height="768" alt="Screenshot 2026-02-14 at 9 49 02 AM" src="https://github.com/user-attachments/assets/cba3752e-39ba-44a6-964f-e6910d437b4b" />
+
 
 **Task 20**
-https://github.com/user-attachments/assets/06bf443a-d65c-4af4-849d-93c34420b95b
+
+https://github.com/user-attachments/assets/b412cbc0-8f98-4d24-979e-629ffebe10e5
+
 
 
 👩‍💻 Author
